@@ -7,13 +7,13 @@ params:
 
 # About West Antique Gallery
 
-Welcome to West Antique Gallery, a curated online space showcasing the finest collections of antique jewelry, beauty products, fashion items, and nature photography.
+Welcome to West Antique Gallery, a curated online space showcasing the finest collections of antiques, beauty products, fashion items, and nature photography.
 
 ## Our Collections
 
 We specialize in four main categories:
 
-- **Antique Jewelry**: Discover unique and timeless pieces from different eras, each with its own story and character.
+- **Antique**: Discover unique and timeless pieces from different eras, each with its own story and character.
 - **Beauty**: Explore our selection of beauty products and tips for enhancing your natural beauty.
 - **Fashion**: Browse through our fashion collections featuring both vintage and contemporary styles.
 - **Nature**: Immerse yourself in stunning nature photography capturing the beauty of the natural world.

@@ -13,7 +13,7 @@ pygmentsStyle = "monokai"
   title = "West Antique Gallery"
   
   # A short description of your site that will be shown in the header
-  subtitle = "Antique Jewelry, Beauty, Fashion and Nature"
+  subtitle = "Antique, Beauty, Fashion and Nature"
   
   # The path to your favicon
   favicon = "favicon.ico"

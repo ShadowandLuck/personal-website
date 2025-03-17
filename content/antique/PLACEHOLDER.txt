@@ -1,0 +1,10 @@
+This is a placeholder file. In a real website, you would add your antique photos in this directory.
+
+For example:
+- victorian-furniture.jpg
+- art-deco-lamp.jpg
+- vintage-clock.jpg
+- antique-vase.jpg
+- collectible-items.jpg
+
+The Gallery theme will automatically display these images in a beautiful grid layout with lightbox functionality. 

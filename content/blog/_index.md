@@ -6,4 +6,4 @@ params:
   theme: dark
 ---
 
-Welcome to the West Antique Gallery blog! Here you'll find articles, stories, and insights about our collections, antique history, beauty tips, fashion trends, and nature photography. 
+Welcome to the West Antique Gallery blog! Here you'll find articles, stories, and insights about our collections, antique history, beauty tips, fashion trends, and nature inspiration. 
