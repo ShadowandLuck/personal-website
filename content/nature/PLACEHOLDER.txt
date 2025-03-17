@@ -1,0 +1,10 @@
+This is a placeholder file. In a real website, you would add your nature photos in this directory.
+
+For example:
+- nature1.jpg
+- nature2.jpg
+- mountains.jpg
+- forest.jpg
+- river.jpg
+
+The Gallery theme will automatically display these images in a beautiful grid layout with lightbox functionality. 

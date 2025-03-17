@@ -1,0 +1,61 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "My Personal Gallery"
+theme = "gallery"
+
+# Enable Hugo's built-in syntax highlighting
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = "monokai"
+
+[params]
+  # The title of your site that will be shown in the header
+  title = "My Personal Gallery"
+  
+  # A short description of your site that will be shown in the header
+  subtitle = "A collection of my photos and blog posts"
+  
+  # The path to your favicon
+  favicon = "favicon.ico"
+  
+  # Footer text
+  footer = "© 2024 My Personal Website"
+  
+  # Default theme (light or dark)
+  defaultTheme = "light"
+  
+  [params.socialIcons]
+    # Add your social media links here
+    # github = "https://github.com/yourusername"
+    # instagram = "https://www.instagram.com/yourusername"
+    # email = "mailto:your.email@example.com"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# Related content configuration
+[related]
+  includeNewer = true
+  threshold = 10
+  toLower = false
+  [[related.indices]]
+    applyFilter = false
+    cardinalityThreshold = 0
+    name = 'categories'
+    pattern = ''
+    toLower = false
+    type = 'basic'
+    weight = 10
+  [[related.indices]]
+    applyFilter = false
+    cardinalityThreshold = 0
+    name = 'tags'
+    pattern = ''
+    toLower = false
+    type = 'basic'
+    weight = 50
+
+[markup.goldmark.renderer]
+  # Allow HTML in Markdown
+  unsafe = true

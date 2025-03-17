@@ -1,0 +1,68 @@
+/* Custom styles for the personal website */
+
+/* Add a subtle background pattern to the body */
+body {
+  background-color: #f9f9f9;
+}
+
+/* Style the site header */
+.site-header {
+  padding: 2rem 0;
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Style the album cards */
+.album-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the blog post list */
+.blog-post {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.blog-post:last-child {
+  border-bottom: none;
+}
+
+/* Style the footer */
+.site-footer {
+  padding: 2rem 0;
+  margin-top: 3rem;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Style social icons */
+.social-icons a {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 1rem 0;
+  }
+  
+  .site-title {
+    font-size: 1.5rem;
+  }
+} 
