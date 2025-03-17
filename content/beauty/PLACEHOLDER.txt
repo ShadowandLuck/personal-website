@@ -1,0 +1,10 @@
+This is a placeholder file. In a real website, you would add your beauty product photos in this directory.
+
+For example:
+- skincare-routine.jpg
+- makeup-collection.jpg
+- natural-beauty.jpg
+- wellness-products.jpg
+- beauty-rituals.jpg
+
+The Gallery theme will automatically display these images in a beautiful grid layout with lightbox functionality. 

@@ -1,10 +1,10 @@
 ---
-title: Welcome to My Personal Gallery
-description: A collection of my photos and blog posts
+title: Welcome to West Antique Gallery
+description: Showcasing Antique Jewelry, Beauty, Fashion and Nature
 params:
   theme: dark
 ---
 
-Welcome to my personal gallery website! Here you'll find my photo collections and blog posts about various topics.
+Welcome to West Antique Gallery! Here you'll find our curated collections of antique jewelry, beauty products, fashion items, and nature photography.
 
-Feel free to explore the different albums and categories. 
+Feel free to explore our different categories and collections. 

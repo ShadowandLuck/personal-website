@@ -1,0 +1,10 @@
+This is a placeholder file. In a real website, you would add your fashion photos in this directory.
+
+For example:
+- vintage-dress.jpg
+- accessories-collection.jpg
+- contemporary-style.jpg
+- fashion-history.jpg
+- seasonal-trends.jpg
+
+The Gallery theme will automatically display these images in a beautiful grid layout with lightbox functionality. 

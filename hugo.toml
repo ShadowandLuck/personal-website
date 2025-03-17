@@ -1,6 +1,6 @@
 baseURL = "https://example.com/"
 languageCode = "en-us"
-title = "My Personal Gallery"
+title = "West Antique Gallery"
 theme = "gallery"
 
 # Enable Hugo's built-in syntax highlighting
@@ -10,16 +10,16 @@ pygmentsStyle = "monokai"
 
 [params]
   # The title of your site that will be shown in the header
-  title = "My Personal Gallery"
+  title = "West Antique Gallery"
   
   # A short description of your site that will be shown in the header
-  subtitle = "A collection of my photos and blog posts"
+  subtitle = "Antique Jewelry, Beauty, Fashion and Nature"
   
   # The path to your favicon
   favicon = "favicon.ico"
   
   # Footer text
-  footer = "© 2024 My Personal Website"
+  footer = "© 2024 West Antique Gallery"
   
   # Default theme (light or dark)
   defaultTheme = "dark"
