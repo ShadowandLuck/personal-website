@@ -1,0 +1,103 @@
+{{ $theme := .Params.theme | default .Site.Params.defaultTheme | default "light" }}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  {{ with .Site.Params.favicon }}<link rel="icon" href="{{ . | relURL }}">{{ end }}
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  <style>
+    .blog-list {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .blog-card {
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .blog-card h2 {
+      margin-bottom: 10px;
+    }
+    
+    .blog-card h2 a {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    .blog-meta {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    
+    .blog-meta .categories {
+      margin-left: 15px;
+    }
+    
+    .blog-meta a {
+      color: #666;
+      text-decoration: underline;
+    }
+    
+    .description {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+    
+    .read-more {
+      display: inline-block;
+      padding: 5px 15px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 3px;
+    }
+    
+    .read-more:hover {
+      background: #555;
+    }
+    
+    /* Dark theme adjustments */
+    .theme-dark .blog-card {
+      border-bottom-color: #444;
+    }
+    
+    .theme-dark .blog-meta {
+      color: #aaa;
+    }
+    
+    .theme-dark .blog-meta a {
+      color: #aaa;
+    }
+    
+    .theme-dark .read-more {
+      background: #555;
+    }
+    
+    .theme-dark .read-more:hover {
+      background: #777;
+    }
+  </style>
+</head>
+<body class="theme-{{ $theme }}">
+  <header>
+    <div class="container">
+      <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Params.title }}</a></h1>
+      {{ with .Site.Params.subtitle }}<p>{{ . }}</p>{{ end }}
+    </div>
+  </header>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    <div class="container">
+      {{ with .Site.Params.footer }}<p>{{ . | markdownify }}</p>{{ end }}
+    </div>
+  </footer>
+</body>
+</html> 

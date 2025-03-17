@@ -1,0 +1,107 @@
+{{ define "main" }}
+  <article class="blog-post">
+    <header>
+      <h1>{{ .Title }}</h1>
+      <div class="blog-meta">
+        <span class="date">{{ .Date.Format "January 2, 2006" }}</span>
+        {{ with .Params.categories }}
+          <span class="categories">
+            Categories: 
+            {{ range . }}
+              <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+          </span>
+        {{ end }}
+        {{ with .Params.tags }}
+          <span class="tags">
+            Tags: 
+            {{ range . }}
+              <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+          </span>
+        {{ end }}
+      </div>
+    </header>
+    <div class="content">
+      {{ .Content }}
+    </div>
+    
+    {{ if .Site.Params.showRelatedPosts }}
+      {{ $related := .Site.RegularPages.Related . | first 3 }}
+      {{ with $related }}
+        <div class="related-posts">
+          <h3>Related Posts</h3>
+          <ul>
+            {{ range . }}
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    {{ end }}
+  </article>
+  
+  <style>
+    .blog-post {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .blog-post header {
+      margin-bottom: 30px;
+    }
+    
+    .blog-post h1 {
+      margin-bottom: 10px;
+    }
+    
+    .blog-meta {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    
+    .blog-meta .categories,
+    .blog-meta .tags {
+      margin-left: 15px;
+    }
+    
+    .blog-meta a {
+      color: #666;
+      text-decoration: underline;
+    }
+    
+    .content {
+      line-height: 1.7;
+    }
+    
+    .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    
+    .content p {
+      margin-bottom: 1em;
+    }
+    
+    .related-posts {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+    }
+    
+    /* Dark theme adjustments */
+    .theme-dark .blog-meta {
+      color: #aaa;
+    }
+    
+    .theme-dark .blog-meta a {
+      color: #aaa;
+    }
+    
+    .theme-dark .related-posts {
+      border-top-color: #444;
+    }
+  </style>
+{{ end }} 

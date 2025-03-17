@@ -14,7 +14,8 @@ pygmentsStyle = "monokai"
   
   # A short description of your site that will be shown in the header
   subtitle = "Antique, Beauty, Fashion and Nature"
-  
+
+
   # The path to your favicon
   favicon = "favicon.ico"
   
@@ -24,11 +25,17 @@ pygmentsStyle = "monokai"
   # Default theme (light or dark)
   defaultTheme = "dark"
   
+  # Enable showing related posts
+  showRelatedPosts = true
+  
   [params.socialIcons]
     # Add your social media links here
-    # github = "https://github.com/yourusername"
-    # instagram = "https://www.instagram.com/yourusername"
+    github = "https://github.com/yourusername"
+    instagram = "https://www.instagram.com/yourusername"
     # email = "mailto:your.email@example.com"
+    taobao = "https://github.com/yourusername"
+    Wechat = "https://github.com/yourusername"
+
 
 [taxonomies]
   category = "categories"
