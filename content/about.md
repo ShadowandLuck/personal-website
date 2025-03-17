@@ -1,6 +1,8 @@
 ---
 title: About Me
 date: 2024-05-01
+params:
+  theme: dark
 ---
 
 # About Me

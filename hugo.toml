@@ -22,7 +22,7 @@ pygmentsStyle = "monokai"
   footer = "© 2024 My Personal Website"
   
   # Default theme (light or dark)
-  defaultTheme = "light"
+  defaultTheme = "dark"
   
   [params.socialIcons]
     # Add your social media links here
